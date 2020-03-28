@@ -1,0 +1,289 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=divice-width, initial-scale=1"/>
+		<title>Matthew Jiao</title>
+		<link rel="stylesheet" type="text/css" href="http://unpkg.com/aos@next/dist/aos.css">
+		<link rel="stylesheet" type="text/css" href="http://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="main.css">
+	</head>
+
+
+	<body>	
+
+		<header>
+			<div class="menu-toggler">
+				<div class="bar half start"></div>
+				<div class="bar"></div>
+				<div class="bar half end"></div>
+			</div>
+			<nav class="top-nav">
+				<ul class="nav-list">
+					<li>
+						<a href="index.html" class="nav-link" id="1">| Home |</a>
+					</li>
+					<li>
+						<a href="#about" class="nav-link" id="2">| About |</a>
+					</li>
+					<li>
+						<a href="#interests" class="nav-link"id="3">| Interests |</a>
+					</li>
+					<li>
+						<a href="#projects" class="nav-link"id="4">| Projects |</a>
+					</li>
+					<li>
+						<a href="#experience" class="nav-link"id="5">| Experience |</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="landing-text">
+				<div class="name">
+					<h1>I'm Matthew Jiao.</h1>
+				</div>
+				<h6>| Student  |  Developer |</h6>
+			</div>
+
+		</header>
+
+		<section class="about" id="about">
+			<div class="container">
+				<div class ="cont2">
+				<div class="profile-img">
+				<!--	<img src="leaf.jpg"> -->
+				</div>
+				<div class="about-details" data-aos='fade-left' data-aos-delay="300">
+					<div class="about-heading">
+						<h1>About</h1>
+						<h6>Myself</h6>
+					</div>
+					<p>My name is Matthew Jiao, and I'm an 18 y/o student developer from Richmond Hill Canada who is ready for anything that comes his way. I'm passionate about technology and I'm actively involved with the beautiful sport of soccer - not only as a spectator. Through leading both my school's [Engineering Club] and [Euclid Math Club], I've had the amazing opportunity to work collaboratively. Dedicated to putting ideas into action, I've shown a few of my projects below. <br> <br> "This is a wonderful time to be alive. There have never been more possibilities and opportunities for you to achieve more of your goals than exist today." - Brian Tracy, Eat That Frog</p>
+
+					<div class="social-media">
+						<ul class="nav-list">
+							<li>
+								<a href="https://www.linkedin.com/in/matthew-jiao-57004519b/" class="icon-link">
+									<i class="fab fa-linkedin-in" style="font-size:24px"></i>
+								</a>
+							</li>
+							<li>
+								<a href="https://github.com/MatthewJiao?tab=repositories" class="icon-link">
+									<i class="fab fa-github" style="font-size:24px"></i>
+								</a>
+							</li>
+							<li>
+								<a href = "mailto: jiaomatthew222@gmail.com" class="icon-link">
+									<i class="far fa-envelope" style="font-size:24px"></i>
+								</a>
+							</li>
+						</ul>
+					</div>
+
+
+
+				</div>
+			</div>	
+			</div>
+		</section>
+
+		<section class="interests" id="interests">
+			<div class="container">
+				<div class="my-skills">
+					<div class="skill" data-aos='fade-in' data-aos-delay="300">
+						<div class="icon-container">
+						<div class="web-pic">
+							<img src="web.png">
+						</div>
+						</div>
+						<h1>Web Development</h1>
+					</div>
+					<div class="skill" data-aos='fade-in' data-aos-delay="600">
+						<div class="icon-container">
+							<i class="fab fa-android"></i>
+						</div>
+						<h1>Android Development</h1>
+					</div>
+					<div class="skill" data-aos='fade-in' data-aos-delay="900">
+						<div class="icon-container">
+							<i class="fas fa-infinity"></i>
+						</div>
+						<h1>Math Enthusiast</h1>
+					</div>
+					<div class="skill" data-aos='fade-in' data-aos-delay="1200">
+						<div class="icon-container">
+							<i class="fas fa-music"></i>
+						</div>
+						<h1>Clarinet</h1>
+					</div>
+				</div>
+			</div>
+
+		</section>
+
+		<section class="portfolio" id="portfolio">
+			<div class="container">
+				<div class="section-heading" id="projects">
+					<h1>Projects</h1>
+					<h6>View some of my recent work</h6>
+				</div>
+				<div class="portfolio-item">
+					<div class="portfolio-img has-margin-right" data-aos='fade-right' data-aos-delay="300">
+						<img src="bird.jpg">
+					</div>
+
+					
+					<div class="portfolio-description" data-aos='fade-left' data-aos-delay="300" >
+						<h6>Python NEAT</h6>
+						<div class="hea">
+							<a class = "hea2" href="https://github.com/MatthewJiao/Flappy-Bird-A.I.">Flappy Bird AI Version 5.0</a> 
+						</div>
+						<p>Using Python with the Pygame framework, I wrote a basic version of Flappy Bird. I then implemented the NEAT genetic algorithm. This algorithm randomly create "genomes" (neural networks) for each bird in the population. After each generation, the bird that has the highest fitness value is "mutated" (weights/ connections/ layers are randomly adjusted) to create the next generation of birds. I used 3 input neurons (y position of bird, x distance from top pole, x distance from bottom pole) and 1 output neuron (jump = True/False). The activation function I used to evaluate the output is tanH (if tanH > 0.5: jump = True). After 3 generations with a population size of 10, one bird was able to pass over 18000 poles (I dozed off at that point). This was another amazing application of neural networks!</p>
+					<!--	<a href="#bg-modal" class="cta" id="cta">View Details</a> -->
+					</div> 
+
+
+				</div>
+				<div class="portfolio-item">
+					<div class="portfolio-description has-margin-right" data-aos='fade-right' data-aos-delay="300">
+						<h6>Python Tensorflow</h6>
+						<div class="hea">
+							<a class = "hea2" href="https://github.com/MatthewJiao/MattBot">MattBot Version 12.0</a>
+						</div>
+						<p>This is a chatbot (Mattbot as I call it) I built using Tensorflow in Python. The deep learning model I implemented makes use of 2 hidden layers (8 neurons each/ n_epoch=1000/ batch_size=8). When the user enters a sentence, that sentence is formatted into a list of 0s and 1s ("one hot encoded"). This is used as input to train the network. My current model doesn't classify all user imputs the way that I intend it to, but this is ONLY version 12.0. I hope I can somehow make some pulls from Reddit and build a MUCH MUCH bigger data set. To be continued...</p>
+				 		
+
+					</div> 
+					<div class="portfolio-img has-margin-right" data-aos='fade-left' data-aos-delay="300">
+							<img src="MattBot.jpg">
+					</div>
+				</div>
+				<div class="portfolio-item">
+					<div class="portfolio-img has-margin-right" data-aos='fade-right' data-aos-delay="300">
+						<img src="me.jpg">
+					</div>
+
+					
+					<div class="portfolio-description" data-aos='fade-left' data-aos-delay="300" >
+
+						<h6>HTML5/CSS/JavaScript</h6>
+						<div class="hea">
+							<a class = "hea2" href="https://github.com/MatthewJiao/MatthewJiao">Personal Website</a>
+						</div>
+						<p>You're looking at it</p>
+					<!--	<a href="#bg-modal" class="cta" id="cta">View Details</a> -->
+					</div>
+
+
+				</div>
+				<div class="portfolio-item">
+					<div class="portfolio-description has-margin-right" data-aos='fade-right' data-aos-delay="300">
+						<h6>Java</h6>
+						<div class="hea">
+							<a class = "hea2" href="https://github.com/MatthewJiao/NumberFury">NumberFury</a>
+						</div>
+						<p>NumberFury is a mobile game that can be found on the Google Play Store. The goal of the project was to help build the user's number intuition through working with prime numbers and quickly identifying linear combinations. This app was developed using Java.</p>
+				 		<div class="playPic">	
+							<a href="https://play.google.com/store/apps/details?id=number.fury.application">					
+								<img src="google.png">
+							<a/>
+						</div>
+
+					</div> 
+					<div class="portfolio-img has-margin-right" data-aos='fade-left' data-aos-delay="300">
+							<img src="playStore.JPG">
+					</div>
+				</div>
+				<div class="portfolio-item">
+					<div class="portfolio-img has-margin-right" data-aos='fade-right' data-aos-delay="300">
+							<img src="maze.jpg">
+					</div>
+
+					
+					<div class="portfolio-description" data-aos='fade-left' data-aos-delay="300">
+
+						<h6>Java</h6>
+						<div class="hea">
+							<a class = "hea2" href="https://github.com/MatthewJiao/MazeSolver-v3">Recursive Maze Solver</a>
+						</div>
+						<p>You guessed it! This algorithm solves mazes (n>2).</p>
+					<!--	<a href="#bg-modal" class="cta" id="cta">View Details</a> -->
+
+					</div>
+
+
+				</div>
+				<div class="portfolio-item">
+					<div class="portfolio-description has-margin-right" data-aos='fade-right' data-aos-delay="300">
+						<h6>Java Minimax Algorithm</h6>
+						<div class="hea">
+							<a class = "hea2" href="https://github.com/MatthewJiao/Connect4-AI">Connect 4 AI</a>
+						</div>
+						<p>Minimax is a backtracking algorithm that attempts to find the optimal move in a turn-based game. Here, I implemented the algorithm in the game of Connect-4 and used GUI to display the application. When single player mode is selected, the algorithm will play against the player. *I was Red!</p>
+
+					</div> 
+					<div class="portfolio-img has-margin-right" data-aos='fade-left' data-aos-delay="300">
+						<div class="sizeUp">
+								<img src="connect4.jpg">
+						</div>
+					</div>
+
+				</div>
+		</section>
+
+
+		<section class="experience" id="experience" >
+			<div class="container" >
+				<div class="section-heading" id="experience">
+					<h1>Work Experience</h1>
+					<h6>Past Jobs</h6>
+				</div>
+				<div class="timeline"  data-aos='fade-down' data-aos-delay="300">
+					<ul>
+						<li class="date" data-date="2018 - 2019">
+							<h1>All About Health Medical Centre</h1>
+							<p>By managing patient files and assisting with physician schedules, I gained first-hand experience with business logistics in a professional work environment.
+							</p>
+						</li>
+						<li class="date" data-date="2014 - 2015">
+							<h1>Metroland Media</h1>
+							<p>I built discipline, a strong work ethic, and time management skills from maintaining a weekly newspaper route.</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<!-- work experience/school-->
+		
+
+		
+
+		<footer class="copyright">
+			<div class="up" id="up">
+				<i class="fas fa-rocket"></i>
+			</div>
+				<p>Developed by Matthew Jiao 2020</p>
+			<div class="nick">
+				<a class = "nik" href="https://nicholastao.tech/">Inspired by nicholastao.tech</a> 
+			</div>
+		</footer>
+
+
+
+		<script type="text/javascript" src="@fortawesome/free-	solid-svg-icons"></script>
+ 		<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script type="text/javascript" src="http://unpkg.com/aos@next/dist/aos.js"></script>
+		<script type="text/javascript" src="main.js"></script>
+
+
+	</body>
+
+
+
+
+
+</html>
